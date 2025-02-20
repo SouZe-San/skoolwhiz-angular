@@ -1,59 +1,135 @@
-# SkoolwhizAngular
+<h1 align="center">SkoolWhiz Angular <span style="font-size:18px">: Dynamic Form and Data Table with Angular
+</span>
+</h1>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This project was generated using [Vite](https://github.com/angular/angular-cli). Used Angular version 19.1.7.
 
-## Development server
+<div align="center">
 
-To start a local development server, run:
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+
+![npm](https://img.shields.io/badge/npm-%2320232a?style=for-the-badge&logo=npm&logoColor=CB3837)
+![Angular](https://img.shields.io/badge/Angular-%2320232a?style=for-the-badge&logo=angular&logoColor=DD0031)
+![TypeScript](https://img.shields.io/badge/typetcript-%2320232a.svg?style=for-the-badge&logo=typescript&logoColor=%fff)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2320232a.svg?style=for-the-badge&logo=tailwind-css&logoColor=%2361DAFB)
+![bun](https://img.shields.io/badge/bun-%2320232a?style=for-the-badge&logo=bun&logoColor=CB3837)
+![Node.js](https://img.shields.io/badge/Node.js-%2320232a?style=for-the-badge&logo=node.js&logoColor=43853D)
+![HTML](https://img.shields.io/badge/HTML-%2320232a?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS](https://img.shields.io/badge/CSS-%2320232a?style=for-the-badge&logo=css3&logoColor=1572B6)
+
+</div>
+
+## Overview 🧐
+
+This project implements a dynamic web form using Angular that allows users to input their details and displays the submitted data in a table format. Users can edit or delete each entry, and uploaded images are displayed as thumbnails.
+
+## Features ✨
+
+- Input fields for Name, Phone, ID Number, and Picture.
+- Display of submitted data in a table format.
+- Functionality to edit and delete entries.
+- Image upload with thumbnail preview.
+
+## Technologies Used 🛠️
+
+- Angular
+- HTML
+- CSS
+- TypeScript
+- Tailwind CSS
+
+## Installation 🚀
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/SouZe-San/skoolwhiz-angular.git
+
+   cd skoolwhiz-angular
+
+   ```
+
+2. **Install dependencies:**
+   Make sure you have Node.js and Angular CLI installed. Then run:
+
+   ```bash
+   bun install
+   ```
+
+   or
+
+   ```bash
+   npm install
+
+   ```
+
+## Development server 🌐
+
+**Run the application:**
 
 ```bash
-ng serve
+bun start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+or
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open your browser and navigate to `http://localhost:4200/`.
 
-```bash
-ng generate --help
-```
-
-## Building
+## Building 🏗️
 
 To build the project run:
 
 ```bash
 ng build
+
+bun build
 ```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+## Usage 📝
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Fill in the form fields:
 
-```bash
-ng test
-```
+   - **Name:** Enter the name (String).
+   - **Phone:** Enter the phone number (String or numeric).
+   - **ID Number:** Enter the ID number (String or numeric).
+   - **Picture:** Upload an image file (JPEG, JPG, PNG).
 
-## Running end-to-end tests
+2. Click the **Save** button to append the data to the table.
 
-For end-to-end (e2e) testing, run:
+3. Each entry in the table will display:
 
-```bash
-ng e2e
-```
+   - Name
+   - Phone
+   - ID Number
+   - Uploaded Picture (as a thumbnail)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+4. To edit an entry, click the **Edit** button next to the respective row. The form will be populated with the existing data, allowing you to make changes.
 
-## Additional Resources
+5. To delete an entry, click the **Delete** button next to the respective row. A confirmation prompt will appear before the entry is removed.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Code Structure 📁
+
+- **src/app**
+
+  - **user-form/**: Main component handling form submission and Form UI.
+  - **user-table/**: Main component handling form Data and View In table.
+  - **models/**: Define TypeScript interfaces for data models.
+  - **services/**: Data handling and managing.
+
+  - **main.ts**: Main component handling form submission and data management.
+  - **style.css**: Styles for the application.
+
+## License 📝
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments 🙏
+
+- Angular documentation for guidance on building components and services.
+- Community resources for best practices in form handling and data management.

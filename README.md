@@ -8,12 +8,12 @@ This project was generated using [Vite](https://github.com/angular/angular-cli).
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 
-![npm](https://img.shields.io/badge/npm-%2320232a?style=for-the-badge&logo=npm&logoColor=CB3837)
 ![Angular](https://img.shields.io/badge/Angular-%2320232a?style=for-the-badge&logo=angular&logoColor=DD0031)
 ![TypeScript](https://img.shields.io/badge/typetcript-%2320232a.svg?style=for-the-badge&logo=typescript&logoColor=%fff)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2320232a.svg?style=for-the-badge&logo=tailwind-css&logoColor=%2361DAFB)
 ![bun](https://img.shields.io/badge/bun-%2320232a?style=for-the-badge&logo=bun&logoColor=CB3837)
 ![Node.js](https://img.shields.io/badge/Node.js-%2320232a?style=for-the-badge&logo=node.js&logoColor=43853D)
+![npm](https://img.shields.io/badge/npm-%2320232a?style=for-the-badge&logo=npm&logoColor=CB3837)
 ![HTML](https://img.shields.io/badge/HTML-%2320232a?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS](https://img.shields.io/badge/CSS-%2320232a?style=for-the-badge&logo=css3&logoColor=1572B6)
 
@@ -117,17 +117,16 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 - **src/app**
 
-  - **user-form/**: Main component handling form submission and Form UI.
-  - **user-table/**: Main component handling form Data and View In table.
-  - **models/**: Define TypeScript interfaces for data models.
-  - **services/**: Data handling and managing.
+  - **components/**
+    - **user-form/user-form.component.ts**: Main component handling form submission and Form UI.
+    - **user-table/user-table.component.ts**: Main component handling form Data and View In table.
+  - **models/**
+    - **user.model.ts**: Define TypeScript interfaces for data models.
+  - **services/**
+    - **user.service.ts**: Data handling and managing.
 
-  - **main.ts**: Main component handling form submission and data management.
-  - **style.css**: Styles for the application.
-
-## License 📝
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- **main.ts**: Main component handling form submission and data management.
+- **style.css**: Styles for the application.
 
 ## Acknowledgments 🙏
 

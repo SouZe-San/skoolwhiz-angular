@@ -21,6 +21,7 @@ import { User } from './app/models/user.model';
           [isEditing]="editIndex !== -1"
           [userData]="editIndex !== -1 ? users[editIndex] : null"
           (formSubmit)="handleFormSubmit($event)"
+          (cancelEdit)="handleCancel()"
         ></app-user-form>
 
         <app-user-table
@@ -58,6 +59,9 @@ export class App {
 
   handleDelete(index: number) {
     this.userService.deleteUser(index);
+  }
+  handleCancel() {
+    this.editIndex = -1;
   }
 }
 
